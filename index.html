@@ -18,21 +18,337 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../05-Calendar/assets/style.css" />
     <title>Work Day Scheduler</title>
+
+    <style>
+      .hourTime {
+        background-color: transparent;
+      }
+      .textarea {
+        background-color: red;
+      }
+
+    </style>
+
   </head>
+
 
   <body>
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <h2>Today is: <span></span></h2>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+    
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="hourTime">
+          <p>9am</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-10 col-lg-10">
+        <div class="textarea">
+          <p>content</p>
+        </div>
+      </div>
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="saveBtn">
+          <p>save</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="row">
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="hourTime">
+          <p>10am</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-10 col-lg-10">
+        <div class="textarea">
+          <p>content</p>
+        </div>
+      </div>
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="saveBtn">
+          <p>save</p>
+        </div>
+      </div>
     </div>
 
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>11am</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>12am</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>1pm</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>2pm</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>3pm</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>4pm</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>5pm</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>6pm</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row">
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="hourTime">
+        <p>7pm</p>
+      </div>
+    </div>
+    <div class="col-10 col-md-10 col-lg-10">
+      <div class="textarea">
+        <p>content</p>
+      </div>
+    </div>
+    <div class="col-1 col-md-1 col-lg-1">
+      <div class="saveBtn">
+        <p>save</p>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="hourTime">
+          <p>8pm</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-10 col-lg-10">
+        <div class="textarea">
+          <p>content</p>
+        </div>
+      </div>
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="saveBtn">
+          <p>save</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="hourTime">
+          <p>9pm</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-10 col-lg-10">
+        <div class="textarea">
+          <p>content</p>
+        </div>
+      </div>
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="saveBtn">
+          <p>save</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="hourTime">
+          <p>10pm</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-10 col-lg-10">
+        <div class="textarea">
+          <p>content</p>
+        </div>
+      </div>
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="saveBtn">
+          <p>save</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="hourTime">
+          <p>11pm</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-10 col-lg-10">
+        <div class="textarea">
+          <p>content</p>
+        </div>
+      </div>
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="saveBtn">
+          <p>save</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="hourTime">
+          <p>12am</p>
+        </div>
+      </div>
+      <div class="col-10 col-md-10 col-lg-10">
+        <div class="textarea">
+          <p>content</p>
+        </div>
+      </div>
+      <div class="col-1 col-md-1 col-lg-1">
+        <div class="saveBtn">
+          <p>save</p>
+        </div>
+      </div>
+    </div>
+  </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script>
+      var now = moment();
+      $("span").text(now.format('MMMM DD YYYY, h:mm:ss a'));
+      console.log(now.format('MMMM DD YYYY, h:mm:ss a'));
+
+      var timeObj = moment();
+
+      var fakeTime = "Wed Sep 29 2021 20:12:31 GMT-0500"
+
+      console.log(timeObj);
+    </script>
+    <!--iterate over all the dics that are time bloacks-->
+    <!--first div is labelled "9am" 
+    Wed Sep 29 2021 20:12:31 GMT-0500 -->
+
+
+
   </body>
 </html>
