@@ -1,21 +1,16 @@
 //TODO add local storage for the text bar. How can you save it all at one time and put it in local storage.
 
 var now = moment();
+var time = 9;
 $("span").text(now.format('MMMM DD YYYY, h:mm:ss a'));
 var fakeTime = "Wed Sep 29 2021" + now + "GMT-0500";
+time = moment(time).add(updateTime, 'h')
 
 // var storage = document.getElementById('hourTime');
 // var textArea = $("text")
 // var savebutton = document.getElementById('saveBtn');
 
-// savebutton.onabort('click', function() {
-//     console.log($(this));
-//     localStorage.setItem("textarea", textArea.val());
-//     console.log("click")
-// })
-
-// function start();
-
+localStorage.setItem("textarea", textArea.val());
 localStorage.setItem = ["" , "" , "" , "" ,"" , "" ,"" , "" ,"" , "" ,"" , "" ,"" , "" ,"" , ""];
 
 function compareTimesNine() {
@@ -147,3 +142,16 @@ function compareTimesSix() {
         five.addClass("present time");
     }
 }
+
+textareaEl.value = newVal;
+
+compareTimesNine();
+compareTimesTen();
+compareTimesEleven();
+compareTimesTwelve();
+compareTimesOne();
+compareTimesTwo();
+compareTimesThree();
+compareTimesFour();
+compareTimesFive();
+compareTimesSix();
