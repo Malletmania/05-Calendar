@@ -18,6 +18,15 @@
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="text/javascript"
+      src="https://www.unpkg.com/jquery@3.5.1/dist/jquery.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.unpkg.com/moment@2.29.1/moment.js"
+    ></script>
+    <script src="./assets/script.js"></script>
     <link rel="stylesheet" href="../05-Calendar/assets/style.css" />
     <title>Work Day Scheduler</title>
 
@@ -28,11 +37,8 @@
       .textarea {
         background-color: red;
       }
-
     </style>
-
   </head>
-
 
   <body>
     <header class="jumbotron">
@@ -41,200 +47,153 @@
       <h2>Today is: <span></span></h2>
       <p id="currentDay" class="lead"></p>
     </header>
-    
-  <div class="container-fluid">
-    <div class="row" data-hour="09:00:00"> <!-- need to add past present or future class to and or around the class row-->
-      <!-- if dataHour < current time   -->
-      <div class="col-1 col-md-1 col-lg-1">
-        <div class="hourTime">
-          <p>9am</p>
+    <form id = "planner">
+    <div class="container-fluid">
+      <div class="row" data-hour="09:00:00">
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="hourTime">
+            <p>10am</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-10">
+          <div class="textarea">
+            <textarea>content</textarea>
+          </div>
+        </div>
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="saveBtn">
+            <button type="button">save</button>
+          </div>
         </div>
       </div>
-      <div class="col-10 col-md-10 col-lg-10">
-        <div class="textarea">
-          <p>content</p>
+
+      <div class="row" data-hour="10:00:00">
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="hourTime">
+            <p>10am</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-10">
+          <div class="textarea">
+            <textarea>content</textarea>
+          </div>
+        </div>
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="saveBtn">
+            <button type="button">save</button>
+          </div>
         </div>
       </div>
-      <div class="col-1 col-md-1 col-lg-1">
-        <div class="saveBtn">
-          <p>save</p>
+
+      <div class="row" data-hour="11:00:00">
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="hourTime">
+            <p>10am</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-10">
+          <div class="textarea">
+            <textarea>content</textarea>
+          </div>
+        </div>
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="saveBtn">
+            <button type="button">save</button>
+          </div>
         </div>
       </div>
-    </div>
-  
-    <div class="row" data-hour="10:00:00">
-      <div class="col-1 col-md-1 col-lg-1">
-        <div class="hourTime">
-          <p>10am</p>
+
+      <div class="row" data-hour="12:00:00">
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="hourTime">
+            <p>10am</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-10">
+          <div class="textarea">
+            <textarea>content</textarea>
+          </div>
+        </div>
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="saveBtn">
+            <button type="button">save</button>
+          </div>
         </div>
       </div>
-      <div class="col-10 col-md-10 col-lg-10">
-        <div class="textarea">
-          <p>content</p>
+
+      <div class="row" data-hour="13:00:00">
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="hourTime">
+            <p>10am</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-10">
+          <div class="textarea">
+            <textarea>content</textarea>
+          </div>
+        </div>
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="saveBtn">
+            <button type="button">save</button>
+          </div>
         </div>
       </div>
-      <div class="col-1 col-md-1 col-lg-1">
-        <div class="saveBtn">
-          <p>save</p>
+
+      <div class="row" data-hour="14:00:00">
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="hourTime">
+            <p>10am</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-10">
+          <div class="textarea">
+            <textarea>content</textarea>
+          </div>
+        </div>
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="saveBtn">
+            <button type="button">save</button>
+          </div>
         </div>
       </div>
-    </div>
 
-  <div class="row" data-hour="11:00:00">
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="hourTime">
-        <p>11am</p>
+      <div class="row" data-hour="15:00:00">
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="hourTime">
+            <p>10am</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-10">
+          <div class="textarea">
+            <textarea>content</textarea>
+          </div>
+        </div>
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="saveBtn">
+            <button type="button">save</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-10 col-md-10 col-lg-10">
-      <div class="textarea">
-        <p>content</p>
-      </div>
-    </div>
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="saveBtn">
-        <p>save</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="row" data-hour="12:00:00">
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="hourTime">
-        <p>12am</p>
+      <div class="row" data-hour="16:00:00">
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="hourTime">
+            <p>10am</p>
+          </div>
+        </div>
+        <div class="col-10 col-md-10 col-lg-10">
+          <div class="textarea">
+            <textarea>content</textarea>
+          </div>
+        </div>
+        <div class="col-1 col-md-1 col-lg-1">
+          <div class="saveBtn">
+            <button type="button">save</button>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-10 col-md-10 col-lg-10">
-      <div class="textarea">
-        <p>content</p>
-      </div>
-    </div>
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="saveBtn">
-        <p>save</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="row" data-hour="13:00:00">
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="hourTime">
-        <p>1pm</p>
-      </div>
     </div>
-    <div class="col-10 col-md-10 col-lg-10">
-      <div class="textarea">
-        <p>content</p>
-      </div>
-    </div>
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="saveBtn">
-        <p>save</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row" data-hour="14:00:00">
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="hourTime">
-        <p>2pm</p>
-      </div>
-    </div>
-    <div class="col-10 col-md-10 col-lg-10">
-      <div class="textarea">
-        <p>content</p>
-      </div>
-    </div>
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="saveBtn">
-        <p>save</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row" data-hour="15:00:00">
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="hourTime">
-        <p>3pm</p>
-      </div>
-    </div>
-    <div class="col-10 col-md-10 col-lg-10">
-      <div class="textarea">
-        <p>content</p>
-      </div>
-    </div>
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="saveBtn">
-        <p>save</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row" data-hour="16:00:00">
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="hourTime">
-        <p>4pm</p>
-      </div>
-    </div>
-    <div class="col-10 col-md-10 col-lg-10">
-      <div class="textarea">
-        <p>content</p>
-      </div>
-    </div>
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="saveBtn">
-        <p>save</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row" data-hour="17:00:00">
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="hourTime">
-        <p>5pm</p>
-      </div>
-    </div>
-    <div class="col-10 col-md-10 col-lg-10">
-      <div class="textarea">
-        <p>content</p>
-      </div>
-    </div>
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="saveBtn">
-        <p>save</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="row" data-hour="18:00:00">
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="hourTime">
-        <p>6pm</p>
-      </div>
-    </div>
-    <div class="col-10 col-md-10 col-lg-10">
-      <div class="textarea">
-        <p>content</p>
-      </div>
-    </div>
-    <div class="col-1 col-md-1 col-lg-1">
-      <div class="saveBtn">
-        <p>save</p>
-      </div>
-    </div>
-  </div>
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script>
-      var now = moment();
-      $("span").text(now.format('MMMM DD YYYY, h:mm:ss a'));
-      var fakeTime = "Wed Sep 29 2021" + now + "GMT-0500";
-      time = moment(time).add(updateTime, 'h');
-    </script>
-
-
-
-
+    </form>
   </body>
 </html>
